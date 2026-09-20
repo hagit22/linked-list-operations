@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="omelette-owns-print">
-<title>פעולות על שרשרת חוליות</title>
+<title>פעולות על שרשרת חוליות - יסודות ב</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -388,6 +388,7 @@ ul.bullets-vivid li::before { content: counter(bv); position: static; counter-in
 .op-ptr-label { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; }
 .op-ptr-arrow { width: 3px; height: 26px; position: relative; }
 .op-ptr-arrow::after { content: ''; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 9px solid currentColor; }
+.op-ptr-row-slide .op-node-ptr { flex-direction: row; align-items: flex-end; gap: 12px; }
 .op-diagram { flex: 1; display: flex; align-items: center; justify-content: center; flex-wrap: nowrap; gap: 0; position: relative; }
 .op-diagram-stage.tall { height: 640px; }
 .op-diagram-stage.tall { height: 560px; }
@@ -684,7 +685,7 @@ public class IntNode
 </section>
 
 <section
-  class="slide content op-anim-slide"
+  class="slide content op-anim-slide op-ptr-row-slide"
   data-label="יצירת שרשרת בלולאה"
   data-steps='[{"line":null,"nodes":0,"links":0,"showNull":false,"first":null,"current":null},{"line":1,"nodes":1,"links":0,"showNull":false,"first":1,"current":null},{"line":2,"nodes":1,"links":0,"showNull":false,"first":1,"current":1},{"line":3,"nodes":2,"links":0,"showNull":false,"first":1,"current":1},{"line":4,"nodes":2,"links":1,"showNull":false,"first":1,"current":1},{"line":5,"nodes":2,"links":1,"showNull":false,"first":1,"current":2},{"line":3,"nodes":3,"links":1,"showNull":false,"first":1,"current":2},{"line":4,"nodes":3,"links":2,"showNull":false,"first":1,"current":2},{"line":5,"nodes":3,"links":2,"showNull":false,"first":1,"current":3},{"line":3,"nodes":4,"links":2,"showNull":false,"first":1,"current":3},{"line":4,"nodes":4,"links":3,"showNull":true,"first":1,"current":3},{"line":5,"nodes":4,"links":3,"showNull":true,"first":1,"current":4},{"line":6,"nodes":4,"links":3,"showNull":true,"first":1,"current":4,"returnNode":1}]'
 >
